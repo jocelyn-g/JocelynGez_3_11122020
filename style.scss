@@ -1,0 +1,65 @@
+@import "./sass/variables";
+@import "./sass/mixin";
+@import "./sass/police";
+@import "./sass/keyframes";
+@import "./sass/home";
+@import "./sass/menu";
+@import "./sass/responsive";
+
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+
+    header
+    {
+        padding: 20px;
+
+        .retour
+        {
+            position: absolute;
+            top: 2em;
+            left: 2em;
+            color: black;
+        }
+    
+        .logo
+        {
+            img{
+                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }    
+        }
+    }
+
+    footer
+    {
+        background-color: #393939;
+        padding: 10px;
+
+        ul
+        {
+            p
+                {
+                    color: white;
+                    font-size: 1.2em;
+                    font-family: 'Shrikhand', cursive;
+                }
+                
+            li
+            {
+                list-style: none;
+                padding: 10px;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
