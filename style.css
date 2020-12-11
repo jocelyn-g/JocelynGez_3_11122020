@@ -1,0 +1,758 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*anim chargement de la page d'accueil*/
+@-webkit-keyframes charger {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes charger {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes charger2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes charger2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*animation des menu*/
+@-webkit-keyframes animationentrées {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  25% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+@keyframes animationentrées {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  25% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+
+@-webkit-keyframes animationplats {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  25% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  50% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+
+@keyframes animationplats {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  25% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  50% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+
+@-webkit-keyframes animationdesserts {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  50% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  75% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+
+@keyframes animationdesserts {
+  0% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  50% {
+    opacity: 0;
+    margin-top: -1em;
+  }
+  75% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0em;
+  }
+}
+
+.chargement {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: charger 3s;
+  -webkit-animation: charger 3s;
+  opacity: 0;
+}
+
+.chargement p {
+  color: black;
+  text-align: center;
+  margin-top: 40em;
+}
+
+.explorer {
+  animation: charger2 3s;
+  -webkit-animation: charger2 3s;
+  background-color: #F0F0F0;
+  padding-bottom: 5em;
+}
+
+.explorer .destination {
+  background-color: #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explorer .destination p {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.explorer .destination i {
+  padding-right: 10px;
+}
+
+.explorer .message {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.explorer .message h1 {
+  font-size: 2.5em;
+}
+
+.explorer .message p {
+  font-size: 1.5em;
+}
+
+.explorer button {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  font-size: 1.2em;
+  padding: 20px;
+  color: #F0F0F0;
+  border-style: none;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px #DDDDDD;
+          box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.explorer button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
+  -webkit-box-shadow: 20px 20px 20px #919191;
+          box-shadow: 20px 20px 20px #919191;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.fonctionnement {
+  animation: charger2 3s;
+  -webkit-animation: charger2 3s;
+}
+
+.fonctionnement h1 {
+  padding: 20px;
+  font-size: 1.7em;
+}
+
+.fonctionnement .etape {
+  background-color: #F0F0F0;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px #DDDDDD;
+          box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.fonctionnement .etape:hover .fond {
+  background-color: #9356DC;
+  opacity: 0.2;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.fonctionnement .etape:hover i {
+  color: #9356DC;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.fonctionnement .etape .fond {
+  position: absolute;
+  width: 100%;
+  height: 4.2em;
+  border-radius: 20px;
+}
+
+.fonctionnement .etape i {
+  padding-right: 1em;
+}
+
+.fonctionnement .etape .numerotation {
+  position: absolute;
+  left: -12px;
+}
+
+.fonctionnement .etape .numerotation p {
+  background-color: #9356DC;
+  padding: 5px;
+  width: 20px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+}
+
+.restaurant {
+  animation: charger2 3s;
+  -webkit-animation: charger2 3s;
+  background-color: #F0F0F0;
+  padding-bottom: 30px;
+}
+
+.restaurant h1 {
+  padding: 20px;
+  font-size: 1.7em;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant {
+  width: 90%;
+  height: auto;
+  margin: 30px auto 30px auto;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px #DDDDDD;
+          box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant a {
+  text-decoration: none;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant a .img img {
+  width: 100%;
+  height: 20em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant a .img p {
+  background-color: #99E2D0;
+  width: 5em;
+  font-size: 1.3em;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant a .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant a .info .lieu p {
+  color: black;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant .like {
+  padding: 10px;
+  font-size: 2em;
+  color: black;
+  position: absolute;
+  top: 11em;
+  right: 5%;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant .like_2 {
+  padding: 10px;
+  font-size: 2em;
+  color: red;
+  position: absolute;
+  top: 11em;
+  right: 5%;
+  opacity: 0;
+}
+
+.restaurant .ListeRestaurant .AnnonceRestaurant .like_2:hover {
+  opacity: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.imagonFond img {
+  width: 100%;
+  height: 20em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  background-color: #F0F0F0;
+  border-radius: 40px 40px 0px 0px;
+  padding: 5%;
+  position: relative;
+  top: -3em;
+}
+
+.menu .titreMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu .like {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.menu .like .like_2 {
+  position: absolute;
+  top: 0;
+  color: red;
+  opacity: 0;
+}
+
+.menu .like .like_2:hover {
+  opacity: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.menu .SousTitreMenu {
+  -webkit-box-shadow: 0px 5px #99E2D0;
+          box-shadow: 0px 5px #99E2D0;
+  width: 2.5em;
+}
+
+.menu .entrées {
+  animation: animationentrées 3s;
+  -webkit-animation: animationentrées 3s;
+}
+
+.menu .plats {
+  animation: animationplats 3s;
+  -webkit-animation: animationplats 3s;
+}
+
+.menu .desserts {
+  animation: animationdesserts 3s;
+  -webkit-animation: animationdesserts 3s;
+}
+
+.menu .choix {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 5em;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px #DDDDDD;
+          box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.menu .choix .nomPlat {
+  padding: 0% 5%;
+  width: 90%;
+  height: 100%;
+  position: absolute;
+}
+
+.menu .choix .nomPlat p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu .choix .nomPlat strong {
+  font-size: 1.2em;
+}
+
+.menu .choix .nomPlat:hover {
+  width: 65%;
+}
+
+.menu .choix .nomPlat:hover + .prix {
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.menu .choix .nomPlat:hover + .prix i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu .choix .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.menu .choix .prix p {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  padding-top: 6em;
+  padding-right: 2em;
+  text-align: end;
+}
+
+.menu .choix .prix .valid {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+}
+
+.menu .choix .prix .valid i {
+  color: white;
+  margin: 1.5em;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.menu .commander button {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  font-size: 1.2em;
+  padding: 20px;
+  color: #F0F0F0;
+  border-style: none;
+  -webkit-box-shadow: 10px 10px 10px #DDDDDD;
+          box-shadow: 10px 10px 10px #DDDDDD;
+}
+
+.menu .commander button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
+  -webkit-box-shadow: 20px 20px 20px #919191;
+          box-shadow: 20px 20px 20px #919191;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+@media all and (max-device-width: 800px) {
+  body {
+    /*menu*/
+  }
+  body header .retour {
+    top: 1.5em;
+  }
+  body .chargement p {
+    margin-top: 20em;
+  }
+  body .explorer {
+    padding-bottom: 3em;
+  }
+  body .explorer .message h1 {
+    font-size: 1.7em;
+  }
+  body .explorer .message p {
+    font-size: 1em;
+  }
+  body .explorer button {
+    margin-top: 2em;
+    font-size: 1em;
+  }
+  body .fonctionnement h1 {
+    font-size: 1.5em;
+  }
+  body .fonctionnement .etape {
+    font-size: 1em;
+  }
+  body .restaurant h1 {
+    font-size: 1.5em;
+  }
+  body .restaurant .ListeRestaurant .AnnonceRestaurant a .img img {
+    height: 12em;
+  }
+  body .restaurant .ListeRestaurant .AnnonceRestaurant a .info .lieu p {
+    font-size: 1em;
+  }
+  body .restaurant .ListeRestaurant .AnnonceRestaurant .like {
+    top: 6.5em;
+  }
+  body .restaurant .ListeRestaurant .AnnonceRestaurant .like_2 {
+    top: 6.5em;
+  }
+  body .menu .choix {
+    height: 4em;
+  }
+  body .menu .choix .nomPlat p {
+    font-size: 0.8em;
+  }
+  body .menu .choix .nomPlat strong {
+    font-size: 1.2em;
+  }
+  body .menu .choix .nomPlat:hover {
+    width: 60%;
+  }
+  body .menu .choix .nomPlat:hover + .prix {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  body .menu .choix .prix p {
+    padding-top: 4em;
+    padding-right: 1em;
+  }
+  body .menu .choix .prix .valid i {
+    margin-left: 1.2em;
+    margin-top: 1.5em;
+  }
+  body .menu .commander button {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 1500px) {
+  header .retour {
+    font-size: 150%;
+  }
+  .explorer button {
+    width: 40%;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant a .img img {
+    height: 30em;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant .like {
+    top: 16em;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant .like_2 {
+    top: 16em;
+  }
+  .imagonFond img {
+    height: 30em;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  header .retour {
+    font-size: 300%;
+  }
+  .explorer button {
+    width: 40%;
+  }
+  .restaurant .ListeRestaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant {
+    width: 40%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant a .img img {
+    height: 30em;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant .like {
+    top: 16em;
+  }
+  .restaurant .ListeRestaurant .AnnonceRestaurant .like_2 {
+    top: 16em;
+  }
+  .imagonFond img {
+    height: 70em;
+  }
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body header {
+  padding: 20px;
+}
+
+body header .retour {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  color: black;
+}
+
+body header .logo img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body footer {
+  background-color: #393939;
+  padding: 10px;
+}
+
+body footer ul p {
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Shrikhand', cursive;
+}
+
+body footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+body footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
