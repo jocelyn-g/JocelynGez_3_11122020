@@ -1,0 +1,273 @@
+@media all and (max-device-width: 800px)
+{
+    body
+    {
+
+        header
+        {
+            .retour
+            {
+                top: 1.5em;
+            }
+        }
+        .chargement
+        {
+            p
+            {
+                margin-top: 20em;
+            }
+        }
+
+    .explorer
+        {
+            .message
+            {
+                h1
+                {
+                    font-size: 1.7em;
+                }
+
+                p
+                {
+                    font-size: 1em;
+                }
+            }
+
+            button
+            {
+                margin-top: 2em;
+                font-size: 1em;
+            }
+
+            padding-bottom: 3em;
+        }
+
+        .fonctionnement
+        {
+            h1
+            {
+                font-size: 1.5em;
+            }
+
+            .etape
+            {
+                font-size: 1em;
+            }
+        }
+
+        .restaurant
+        {            
+            h1
+            {
+                font-size: 1.5em;
+            }
+
+            .ListeRestaurant
+            {
+                .AnnonceRestaurant
+                {
+                    a{
+                        .img
+                        {
+                            img{
+                                height: 12em;
+                            }
+                        }
+
+                        .info
+                        {
+                            .lieu
+                            {
+                                p
+                                {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+
+                    .like
+                    {
+                        top: 6.5em;
+                    }
+
+                    .like_2
+                    {
+                        top: 6.5em;
+                    }
+                }
+            }
+        }
+
+        /*menu*/
+
+        .menu
+        {
+            .choix
+            {
+                height: 4em;
+
+                .nomPlat
+                {
+
+                    p
+                    {
+                        font-size: 0.8em;
+                    }
+                    strong
+                    {
+                        font-size: 1.2em;
+                    }
+                    &:hover
+                    {
+                        width: 60%;
+                    }
+                    &:hover +.prix
+                    {
+                        transform: translate(-50%, 0);
+                    }
+                }
+
+                .prix
+                {
+                    p
+                    {
+                        padding-top: 4em;
+                        padding-right: 1em;
+                    }
+                    
+                    .valid
+                    {
+                        i
+                        {
+                            margin-left: 1.2em;
+                            margin-top: 1.5em;
+                        }
+
+                    }
+                }
+            }
+
+            .commander
+            {
+
+                button
+                {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 1500px)
+{
+    header
+    {
+        .retour
+        {
+            font-size: 150%;
+        }
+    }
+    .explorer
+    {    
+        button
+        {
+            width: 40%;
+        }
+    }
+    .restaurant
+    {
+        .ListeRestaurant
+        {
+            .AnnonceRestaurant
+            {
+                a{
+
+                    .img
+                    {
+                        img{
+                            height: 30em;
+                        }
+                    }
+                }
+                .like
+                {
+                    top: 16em;
+                }
+                .like_2
+                {
+                    top: 16em;
+                }
+            }
+        }
+    }
+    .imagonFond
+    {
+        img
+        {
+            height: 30em;
+        }
+    }
+}
+
+
+
+
+@media all and (min-width: 1500px)
+{
+    header
+    {
+        .retour
+        {
+            font-size: 300%;
+        }
+    }
+    .explorer
+    {    
+        button
+        {
+            width: 40%;
+        }
+    }
+    .restaurant
+    {
+        .ListeRestaurant
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .AnnonceRestaurant
+            {
+                width: 40%;
+                margin-left: 2em;
+                margin-right: 2em;
+
+                a{
+
+                    .img
+                    {
+                        img{
+                            height: 30em;
+                        }
+                    }
+                }
+                .like
+                {
+                    top: 16em;
+                }
+                .like_2
+                {
+                    top: 16em;
+                }
+            }
+        }
+    }
+    .imagonFond
+    {
+        img
+        {
+            height: 70em;
+        }
+    }
+}

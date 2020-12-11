@@ -1,0 +1,252 @@
+.chargement
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($secondaire,$primaire);
+        animation: charger 3s;
+        opacity: 0;
+
+        p
+        {
+            color: black;
+            text-align: center;
+            margin-top: 40em;
+        }
+    }
+
+.explorer
+    {    
+        animation: charger2 3s;
+
+        .destination
+        {
+            background-color: $grisfonce;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            p
+            {
+                padding-left: 10px;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+            i
+            {
+                padding-right: 10px;
+            }
+        }
+
+        background-color: $grisclair;
+        
+        .message
+        {
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            h1
+            {
+                font-size: 2.5em;
+            }
+
+            p
+            {
+                font-size: 1.5em;
+            }
+        }
+
+        button
+        {
+            width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient($secondaire,$primaire);
+            border-radius: 50px;
+            font-size: 1.2em;
+            padding: 20px;
+            color: #F0F0F0;
+            border-style: none;
+            position: relative;
+            @include ombre;
+
+            &:hover
+                {
+                    @include transition-button;
+                }
+        }
+
+        padding-bottom: 5em;
+    }
+
+    .fonctionnement
+    {
+        animation: charger2 3s;
+
+        h1
+        {
+            padding: 20px;
+            font-size: 1.7em;
+        }
+
+        .etape
+        {
+            background-color: $grisclair;
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 1.3em;
+            padding: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include ombre;
+            
+            &:hover
+            {
+                .fond
+                {
+                    background-color: $primaire;
+                    opacity: 0.2;
+                    @include transition-durée;
+                }
+
+                i
+                {
+                    color: $primaire;
+                    @include transition-durée;
+                }
+            }
+
+            .fond
+            {
+                position: absolute;
+                width: 100%;
+                height: 4.2em;
+                border-radius: 20px;
+            }
+
+            i
+            {
+                padding-right: 1em;
+            }
+
+            .numerotation
+            {
+                p
+                {
+                    background-color: $primaire;
+                    padding: 5px;
+                    width: 20px;
+                    border-radius: 30px;
+                    text-align: center;
+                    color: white;
+                }
+                position: absolute;
+                left: -12px;
+            }
+        }
+    }
+
+    .restaurant
+    {
+        animation: charger2 3s;
+
+        background-color: $grisclair;
+        padding-bottom: 30px;
+        
+        h1
+        {
+            padding: 20px;
+            font-size: 1.7em;
+        }
+
+        .ListeRestaurant
+        {
+            .AnnonceRestaurant
+            {
+                width: 90%;
+                height: auto;
+                margin: 30px auto 30px auto;
+                background-color: white;
+                border-radius: 30px;
+                position: relative;
+                @include ombre;
+
+                a{
+                    text-decoration: none;
+
+                    .img
+                    {
+                        img{
+                            width: 100%;
+                            height: 20em;
+                            object-fit: cover;
+                            border-radius: 30px 30px 0px 0px;
+                        }
+
+                        p
+                        {
+                            background-color: $tertiaire;
+                            width: 5em;
+                            font-size: 1.3em;
+                            padding: 5px;
+                            text-align: center;
+                            position: absolute;
+                            top: 0;
+                            right: 5%;
+                        }
+                    }
+
+                    .info
+                    {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .lieu
+                        {
+                            p
+                            {
+                                color: black;
+                                font-size: 1.2em;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .like
+                {
+                    padding: 10px;
+                    font-size: 2em;
+                    color: black;
+                    position: absolute;
+                    top: 11em;
+                    right: 5%;
+                }
+
+                .like_2
+                {
+                    padding: 10px;
+                    font-size: 2em;
+                    color: red;
+                    position: absolute;
+                    top: 11em;
+                    right: 5%;
+                    opacity: 0;
+                    &:hover
+                    {
+                        opacity: 1;
+                        @include transition-durée;
+                    }
+                }
+            }
+        }
+    }

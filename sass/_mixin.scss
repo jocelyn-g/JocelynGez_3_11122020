@@ -1,0 +1,13 @@
+@mixin transition-durée {
+    transition: 1s ease-in-out;
+}
+
+@mixin transition-button {
+    background: linear-gradient(lighten($secondaire,5%),lighten($primaire,5%));
+    box-shadow: 20px 20px 20px darken($grisfonce, 30%);
+    @include transition-durée;
+}
+
+@mixin ombre {
+    box-shadow: 10px 10px 10px $grisfonce;
+}
